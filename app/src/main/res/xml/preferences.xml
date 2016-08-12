@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditTextPreference
+        android:key="user_id"
+        android:title="@string/user_id"
+        android:summary=" "/>
+
+    <CheckBoxPreference
+        android:key="gps_sync"
+        android:title="@string/gps_sync"
+        android:summary="@string/gps_sync_summ"
+        android:defaultValue="true"/>
+    <ListPreference
+        android:dependency="precinct"
+        android:key="precinct"
+        android:title="@string/precinct"
+        android:dialogTitle="@string/precinct"
+        android:entries="@array/precinct_entries"
+        android:entryValues="@array/precinct_values"
+        android:defaultValue="" />
+</PreferenceScreen>

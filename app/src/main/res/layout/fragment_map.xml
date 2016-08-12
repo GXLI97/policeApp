@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity$MapFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <ToggleButton
+                    android:id="@+id/togglebuttonP"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:textOn="Patrols On"
+                    android:textOff="Patrols Off"
+                    android:layout_weight="1"
+                    android:textSize="10sp"/>
+                <ToggleButton
+                    android:id="@+id/togglebuttonO"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:textOn="On Call Crimes On"
+                    android:textOff="On Call Crimes Off"
+                    android:layout_weight="1"
+                    android:textSize="10sp"/>
+                <ToggleButton
+                    android:id="@+id/togglebuttonH"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:textOn="Historic Crimes On"
+                    android:textOff="Historic Crimes Off"
+                    android:layout_weight="1"
+                    android:textSize="10sp"/>
+                <ToggleButton
+                    android:id="@+id/togglebuttonHt"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:textOn="Heatmap On"
+                    android:textOff="Heatmap Off"
+                    android:layout_weight="1"
+                    android:textSize="10sp"/>
+        </LinearLayout>
+
+        <com.google.android.gms.maps.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/mapView" />
+
+</LinearLayout>

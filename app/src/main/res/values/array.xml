@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="precinct_entries">
+        <item>"Central"</item>
+        <item>"East"</item>
+        <item>"Hermitage"</item>
+        <item>"Madison"</item>
+        <item>"Midtown Hills"</item>
+        <item>"North"</item>
+        <item>"South"</item>
+        <item>"West"</item>
+    </string-array>
+    <string-array name="precinct_values">
+        <item>"Central"</item>
+        <item>"East"</item>
+        <item>"Hermitage"</item>
+        <item>"Madison"</item>
+        <item>"Midtown Hills"</item>
+        <item>"North"</item>
+        <item>"South"</item>
+        <item>"West"</item>
+    </string-array>
+</resources>

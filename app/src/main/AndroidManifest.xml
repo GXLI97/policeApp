@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.genexli.policev3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDQTjk5DRaxNC9Fkgn_VBsLReF8e_LxKw8"/>
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailRouteActivity"
+            android:label="@string/title_activity_detail_route"
+            android:parentActivityName=".MainActivity"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.genexli.policev3.MainActivity" />
+        </activity>
+
+        <service
+            android:name=".UpdateGPS"
+            android:exported="false"/>
+        <service
+            android:name=".FetchDataService"
+            android:exported="false"/>
+
+
+        <provider
+            android:authorities="com.example.genexli.policev3"
+            android:name=".data.DataProvider" />
+
+    </application>
+
+</manifest>

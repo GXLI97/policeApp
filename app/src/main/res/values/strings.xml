@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PoliceV3</string>
+    <string name="title_activity_detail_route">Detail Route Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="gps_sync">GPS Syncing</string>
+    <string name="gps_sync_summ">Sync GPS location to server</string>
+    <string name="user_id">Patrol ID</string>
+    <string name="rogue_text">Independent Route</string>
+    <string name="button_accept">Accept Route</string>
+    <string name ="precinct">Precinct</string>
+</resources>
