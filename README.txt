@@ -5,7 +5,7 @@ Any questions, please contact me at gxli@princeton.edu.
 
 ————————
 Description
-Front end app that displays data on police locations, heatmaps, and crime locations. It also sends GPS coordinates to the backend server. 
+Displays data on police locations, heatmaps, and crime locations. It also sends GPS coordinates to the backend server. 
 
 How to install:
 Download Android Studio and open up the project from there. 
